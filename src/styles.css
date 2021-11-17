@@ -1,0 +1,387 @@
+/* ==================== RESET ==================== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: "Work Sans", sans-serif;
+  background-color: rgb(244, 248, 250);
+  
+}
+/* ==================== HEADER ==================== */
+#header {
+  position:fixed;
+  border: 1px solid #e4e4e4;
+  width: 100%;
+  display: flex;
+  padding: 25px 0 25px 0;
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+  background-color: rgb(255, 255, 255);
+}
+
+#header a {
+    font-style: italic;
+    font-size: 20px;
+    color: black
+}
+/* ==================== LOGO ==================== */
+.logo{
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #DC143C;
+}
+/* ==================== NAV(MENU) ==================== */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+  display: inline;
+  margin-right: 60px;
+}
+
+
+nav ul li button {
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  transition: color 0.2s;
+  width: 200px;
+  height: 25px;
+  transition: color 0.5s;
+}
+
+nav ul li button:hover{
+  background-color: rgb(27, 49, 168);
+  color: whitesmoke;
+}
+
+
+.ativo{
+  background-color: rgb(27, 49, 168);
+  color: whitesmoke;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  border-radius: 10px 10px 0px 0px;
+}
+/* ==================== CONTAINER ==================== */
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: url(https://images.hdqwalls.com/download/new-york-buildings-city-night-minimalism-4e-1280x720.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.container h4{
+  font-size: 1.5rem;
+  margin: 1.5rem 0 2.5rem 0;
+  color: whitesmoke
+}
+
+/* ==================== PAGINA DE ENTRADA ==================== */
+.btns-boxes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 6px;
+  width: 50rem;
+  height: 25rem;
+  box-shadow: rgb(30 42 50 / 8%) 0px 16px 32px;
+}
+.btns-boxes span{
+  font-size: 30px;
+}
+.admin-div{
+  margin-right: 50px;
+}
+
+.admin-div button, .visitante-div button
+{
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #191970;
+  color: white;
+  border:none;
+  border-radius: 20px;
+}
+.admin-div button:hover, .visitante-div button:hover{
+  background-color: #4169E1;
+}
+/* ==================== HOME PAGE ==================== */
+.manutencao-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 6px;
+  padding: 30px;
+  box-shadow: rgb(30 42 50 / 8%) 0px 16px 32px;
+}
+.manutencao-box h2{
+  font-size: 20px;
+  margin: 3rem;
+
+}
+.list-boxes{
+  align-items: flex-start;
+  box-shadow: rgb(30 42 50 / 8%) 0px 16px 32px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1100px;
+  max-height: 80vh;
+  overflow: auto;
+  width: 70vw;
+  margin-bottom: 20rem;
+}
+
+.list-boxes h4{
+  font-size: 1.5rem;
+  margin: 1.5rem 0 2.5rem 0;
+  color: whitesmoke
+}
+.list-boxes ul li{
+  margin: 30px 30px 15px 60px
+  
+}
+.lista-salas{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr;
+}
+.box-lista-salas{
+  border: 3px solid #FF4500;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.box-lista-salas-cadastrado{
+  border: 4px solid #7CFC00;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.box-lista-salas div span{
+  display: flex;
+  
+}
+.list-boxes ul li button{
+  border-radius: 10px;
+  border:none;
+  cursor: pointer;
+  width: 80px;
+  height: 20px;
+  background-color: #FFE4B5;
+  margin-top: 10px;
+  transition: color 0.2s
+}
+.list-boxes ul li button:hover{
+  background-color: #CD853F;
+  color: white;
+}
+.list-boxes ul li .button-ativo{
+  background-color: #CD853F;
+  color: white;
+  font-weight: bold;
+}
+
+/* ==================== ADICIONAR FILMES ==================== */
+.inpt-boxes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 6px;
+  width: 50rem;
+  height: 25rem;
+  box-shadow: rgb(30 42 50 / 8%) 0px 16px 32px;
+}
+.inpt-boxes label {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.nome-box, .duracao-box{
+  margin-bottom: 26px;
+}
+
+.nome-input-div,
+.duracao-input-div,
+.faixa-etaria-input-div,
+.filme-select-div {
+  border: 1px solid rgb(233, 238, 242);
+  border-radius: 4px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.inpt-boxes select, .inpt-boxes input{
+  width: 100%;
+  border: none;
+  padding: 15px 35px 15px 35px;
+}
+
+.button-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.button-box button{
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  width: 10rem;
+  height: 2rem;
+  background-color:#7FFF00;
+  font-weight: bold;
+}
+
+/* ==================== ADICIONAR SALAS ==================== */
+
+.sala-boxes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 6px;
+  width: 30rem;
+  height: 25rem;
+  box-shadow: rgb(30 42 50 / 8%) 0px 16px 32px;
+}
+
+.sala-boxes label{
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.select-box{
+  
+  margin-bottom: 26px;
+  
+}
+
+.sala-boxes input, .sala-boxes select{
+  width: 100%;
+  border: none;
+  padding: 15px 35px 15px 35px;
+}
+.sala-boxes input:invalid{
+  color: red;
+  
+}
+/* ==================== FILMES ==================== */
+.movie-boxes{
+  align-items: flex-start;
+  box-shadow: rgb(30 42 50 / 8%) 0px 16px 32px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  max-height: 50vh;
+  overflow: auto;
+  width: 70vw;
+  margin-bottom: 10rem;
+}
+
+.movie-boxes h4{
+  font-size: 1.5rem;
+  margin: 5rem 0 2.5rem 0;
+  color: whitesmoke
+}
+.movie-boxes h4{
+  font-size: 1.5rem;
+  margin: 1.5rem 0 2.5rem 0;
+  color: whitesmoke
+}
+.movie-boxes ul li{
+  margin: 30px 30px 15px 60px
+  
+}
+
+.movie-boxes ul .movie-list{
+  display: flex;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.movie-list div {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-list div span{
+  margin: 10px 0 10px 0
+}
+
+.movie-boxes ul li .button-delete{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-boxes ul li .button-delete button{
+  border-radius: 10px;
+  border:none;
+  cursor: pointer;
+  width: 80px;
+  height: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 100px;
+  background-color:#DC143C;;
+  transition: color 0.2s;
+  color: white;
+}
+
+.movie-boxes ul li .button-delete button:hover,
+.movie-boxes ul li .button-delete button:active
+{
+  background-color: red;
+}
+
+
+
+
+
