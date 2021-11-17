@@ -5,6 +5,7 @@ import * as yup from "yup";
 
 import { IFilme } from "../AdicionarFilme";
 import Menu from "../../Components/Menu";
+import InputIdentficacaoSala from "../../Components/InputIdentficacaoSala";
 
 export interface ISala {
   id: number;
@@ -103,14 +104,9 @@ const AdicionarSala: React.FC = () => {
               <div className="nome-box">
                 <label>Nome da Sala</label>
                 <div className="nome-input-div">
-                  <input
-                    placeholder="Nome da Sala"
-                    type="text"
-                    value={inputIdentficacaoSala}
-                    onChange={handleChangeIdentificacaoSala}
-                    maxLength={2}
-                    pattern="[A-F]{1}[1-9]{1}"
-                    title="One letter and one number"
+                  <InputIdentficacaoSala
+                    inputValor={inputIdentficacaoSala}
+                    handleChange={handleChangeIdentificacaoSala}
                   />
                 </div>
               </div>
