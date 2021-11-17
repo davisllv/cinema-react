@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import { AppContext } from "../../Context/AppContext";
 import * as yup from "yup";
 import Menu from "../../Components/Menu";
+import InputDuracao from "../../Components/InputDuracao";
 
 export interface IFilme {
   id: number;
@@ -125,11 +126,9 @@ const AdicionarFilme: React.FC = () => {
             <div className="duracao-box">
               <label>Duracação</label>
               <div className="duracao-input-div">
-                <input
-                  placeholder="Duração"
-                  value={inputDuracao}
-                  type="text"
-                  onChange={handleChangeDuracao}
+                <InputDuracao
+                  inputValor={inputDuracao}
+                  handleChange={handleChangeDuracao}
                 />
               </div>
             </div>
