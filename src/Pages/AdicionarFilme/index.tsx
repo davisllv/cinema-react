@@ -20,6 +20,11 @@ const AdicionarFilme: React.FC = () => {
   const [inputNome, setInputNome] = useState("");
   const [inputDuracao, setInputDuracao] = useState("");
   const [faixaEtaria, setFaixaEtaria] = useState("Livre");
+  
+  const inputGoal = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    inputGoal.current?.focus();
+  }, [listaFilme]);
 
   function handleChangeNome(ev: React.ChangeEvent<HTMLInputElement>): void {
     setInputNome(ev.target.value);
@@ -120,6 +125,7 @@ const AdicionarFilme: React.FC = () => {
                 <InputNome
                   inputValor={inputNome}
                   handleChange={handleChangeNome}
+                  ref={inputGoal}
                 />
               </div>
             </div>
