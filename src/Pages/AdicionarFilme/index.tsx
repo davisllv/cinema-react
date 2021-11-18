@@ -4,6 +4,8 @@ import { AppContext } from "../../Context/AppContext";
 import * as yup from "yup";
 import Menu from "../../Components/Menu";
 import InputDuracao from "../../Components/InputDuracao";
+import InputNome from "../../Components/InputNome";
+import SelectFaixaEtaria from "../../Components/SelectFaixaEtaria";
 
 export interface IFilme {
   id: number;
