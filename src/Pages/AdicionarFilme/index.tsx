@@ -115,11 +115,9 @@ const AdicionarFilme: React.FC = () => {
             <div className="nome-box">
               <label>Nome</label>
               <div className="nome-input-div">
-                <input
-                  placeholder="Nome"
-                  value={inputNome}
-                  type="text"
-                  onChange={handleChangeNome}
+                <InputNome
+                  inputValor={inputNome}
+                  handleChange={handleChangeNome}
                 />
               </div>
             </div>
@@ -135,18 +133,10 @@ const AdicionarFilme: React.FC = () => {
             <div className="faixa-etaria-box">
               <label>Faixa Etaria</label>
               <div className="faixa-etaria-input-div">
-                <select
-                  defaultValue="Livre"
-                  value={faixaEtaria}
-                  onChange={handleChangeFaixaEtaria}
-                >
-                  <option value="Livre">Livre</option>
-                  <option value="10">+10 Anos</option>
-                  <option value="12">+12 Anos</option>
-                  <option value="14">+14 Anos</option>
-                  <option value="16">+16 Anos</option>
-                  <option value="18">+18 Anos</option>
-                </select>
+                <SelectFaixaEtaria
+                  inputValor={faixaEtaria}
+                  handleChange={handleChangeFaixaEtaria}
+                ></SelectFaixaEtaria>
               </div>
             </div>
             <div className="button-box">
